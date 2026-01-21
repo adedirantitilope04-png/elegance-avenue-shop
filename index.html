@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elegance Avenue | Fashion Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <h1 class="logo">ELEGANCE AVENUE</h1>
+    <nav>
+      <a href="#products">Shop</a>
+      <a href="#cart">Cart (<span id="cartCount">0</span>)</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Premium Fashion. Clean Drip. Pure Elegance.</h2>
+      <p>Shop quality outfits and upgrade your style instantly.</p>
+      <a class="btn" href="#products">Start Shopping</a>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <h2>Our Collection</h2>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <section class="cart" id="cart">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+
+    <div class="cart-summary">
+      <h3>Total: ₦<span id="cartTotal">0</span></h3>
+
+      <div class="checkout-box">
+        <h3>Checkout Details</h3>
+        <input type="text" id="customerName" placeholder="Your Full Name" />
+        <input type="text" id="customerAddress" placeholder="Delivery Address" />
+        <input type="text" id="customerPhone" placeholder="Phone Number" />
+
+        <button class="btn whatsapp" onclick="placeOrder()">
+          Place Order on WhatsApp
+        </button>
+
+        <p class="note">
+          Note: You’ll be redirected to WhatsApp with your full order details.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Elegance Avenue. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
