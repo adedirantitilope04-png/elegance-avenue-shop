@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elegance Avenue Admin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <h1 class="logo">ELEGANCE AVENUE - ADMIN</h1>
+    <nav>
+      <a href="index.html">Back to Shop</a>
+    </nav>
+  </header>
+
+  <section class="cart" style="margin-top:30px;">
+    <h2>Add New Product</h2>
+
+    <div class="checkout-box">
+      <input id="pname" type="text" placeholder="Product Name" />
+      <input id="pprice" type="number" placeholder="Price (e.g 12000)" />
+      <input id="pcat" type="text" placeholder="Category (Men/Women/Sneakers/Bags)" />
+      <input id="pimg" type="text" placeholder="Image URL (Paste link)" />
+
+      <button class="btn" onclick="addProduct()">Upload Product</button>
+
+      <p class="note">
+        Note: Use image links from Pexels/Google images. (Later we’ll add real image upload)
+      </p>
+    </div>
+  </section>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
